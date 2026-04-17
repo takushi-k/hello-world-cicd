@@ -16,7 +16,6 @@ jobs:
       - run: git -v
       - run: |
           echo "Hello ${{ env.MESSAGE }}"
-          echo "Hello ${env.MESSAGE}"
           echo "Hello ${MESSAGE}"
         env:
           MESSAGE: 'world'
