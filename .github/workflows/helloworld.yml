@@ -14,3 +14,10 @@ jobs:
       - run: echo "Hello World !"
       - run: mysql -V
       - run: git -v
+      - run: |
+          echo "Hello ${{ env.MESSAGE }}"
+          echo "Hello ${{ MESSAGE }}"
+          echo "Hello ${env.MESSAGE}"
+          echo "Hello ${MESSAGE}"
+        env:
+          MESSAGE: 'world'
