@@ -14,7 +14,7 @@ jobs:
       - run: echo "Hello World !"
       - run: mysql -V
       - run: git -v
-      - shell: bash +e {0}
+      - continue-on-error: true
         run: |
           echo "Hello ${{ env.MESSAGE }}"
           echo "Hello ${{ MESSAGE }}"
