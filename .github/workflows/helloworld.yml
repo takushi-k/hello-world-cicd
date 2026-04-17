@@ -32,3 +32,5 @@ jobs:
           echo "Job       : ${{ github.job }}"
           # Tokenは機密情報なので、通常は *** とマスクされて表示されます
           echo "Token     : ${{ github.token }}"
+      - run: |
+          echo $GITHUB_EVENT_NAME
