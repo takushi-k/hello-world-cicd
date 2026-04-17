@@ -19,3 +19,4 @@ jobs:
           echo "Hello ${MESSAGE}"
         env:
           MESSAGE: 'world'
+      - run: echo "Hello2 ${MESSAGE}"
